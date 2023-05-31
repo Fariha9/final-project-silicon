@@ -1,0 +1,615 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,p{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:root{
+  --primaryFont: 'Manrope', sans-serif;
+  --font400:400;
+  --font600:600;
+  --font800:800;
+  --primaryColor:#6366F1;
+  --gray600:#9397AD;
+  --gray100:#F3F6FF;
+  --gray500:#B4B7C9;
+  --gray700:#565973;
+  --gray800:#33354D;
+  --gray900:#0B0F19;
+  --gray200:#EFF2FC;
+}
+
+
+body{
+  font-family: var(--primaryFont);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-color{
+  background-color: var(--gray800) !important;
+  color: white !important;
+}
+.bck-color-black {
+  background-color: black !important;
+  color: white !important;
+}
+.color-white{
+  color: white !important;
+}
+
+.quote_btn{
+  box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--gray800) !important;
+  color:white !important;
+}
+.arrow_btn{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--gray800) !important;
+  color:white !important;
+}
+
+
+
+
+/* navbar starts */
+nav .nav-item a {
+font-weight: 600;
+font-size: 16px;
+color: var(--gray800);
+line-height: 25.6px;
+}
+nav #signin{
+  background-color: var(--gray100);
+  border: none;
+  margin: 20px;
+  padding: 9px 20px;
+  border-radius: 5px;
+}
+nav #signup{
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+nav #signin:hover{
+  background-color: var(--gray100);
+}
+nav #signup:hover{
+  background-color: var(--primaryColor);
+  color: white;
+}
+nav p{
+  margin: 5px;
+}
+
+nav #toggle {
+  background-color: var(--primaryColor);
+  width: 46px;
+  height: 20px;
+  border-radius: 12px;
+  margin: 5px;
+  cursor: pointer;
+ 
+}
+
+nav #circle {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}  
+
+
+
+/* navbar ends */
+
+/* banner starts */
+#banner .bannertext h1{
+font-size: 56px;
+font-weight: 800;
+line-height: 73px;
+text-align: left;
+padding-top: 130px;
+}
+#banner .bannertext p{
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+text-align: left;
+padding: 32px 0px 45px 0px;
+}
+
+#banner .bannertext .started{
+font-size: 16px;
+font-weight: 600;
+line-height: 26px;
+text-align: center;
+background-color: var(--primaryColor);
+color: white;
+padding: 13px 30px;
+border-radius: 5px;
+}
+#banner .bannertext h6{
+font-size: 16px;
+font-weight: 800;
+line-height: 22px;
+text-align: left;
+padding-top: 112px;
+}
+#banner .bannertext button{
+  visibility: hidden;
+}
+/* banner ends  */
+/* organize starts */
+#organize h1{
+text-align: center;
+font-size: 40px;
+font-weight: 800;
+line-height: 52px;
+padding: 40px 0px 25px 0px;
+}
+#organize .organize_card {
+  margin: 20px 25px;
+  text-align: center;
+}
+#organize .organize_card h5{
+font-size: 20px;
+font-weight: 800;
+line-height: 28px;
+padding: 24px 0px 12px 0px ;
+}
+#organize .organize_card p{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+}
+/* organize ends */
+/* work starts */
+#work{
+  padding: 112px;
+}
+#work .worktext{
+  padding: 100px 0px 100px 310px ;
+  text-align: left;
+}
+#work .worktext h2{
+font-size: 32px;
+font-weight: 800;
+line-height: 42px;
+}
+#work .worktext p{
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+padding: 6px 0px;
+}
+.worktextp{
+  padding: 30px 0px 50px 0px;
+}
+#work .worktext a span{
+  color: white;
+  background-color: var(--primaryColor);
+  padding: 11px 50px 11px 28px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+/* work ends */
+/* tool starts */
+#tool{
+  padding: 100px 0px;
+  text-align: center;
+  
+}
+#tool h1{
+font-size: 40px;
+font-weight: 800;
+line-height: 52px;
+text-align: center;
+margin-bottom: 40px;
+}
+#tool .toolbtn a{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--gray900);
+  background-color: var(--gray200);
+  padding: 8px 16px;
+  margin: 40px 15px;
+  border-radius: 5px;
+}
+#tool .toolbtn a:hover{
+  background-color: var(--primaryColor);
+  color: var(--gray100);
+}
+#tool .toolbtn a:hover span{
+  color: white;
+}
+#tool .tooldescribe{
+  background-color: var(--gray100);
+  margin: 40px 0px;
+  padding:50px 120px 80px 50px;
+}
+#tool .tooldescribe .tooldescribetxt{
+  padding: 50px 20px;
+}
+
+#tool .tooldescribe .tooldescribetxt h3{
+font-size: 28px;
+font-weight: 800;
+line-height: 36px;
+text-align: left;
+padding: 24px 0px;
+}
+#tool .tooldescribe .tooldescribetxt p{
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+padding-right: 70px;
+}
+/* tool ends */
+
+/* pricing starts */
+#pricing {
+  padding: 112px 0px;
+}
+#pricing h1{
+font-size: 40px;
+font-weight: 800;
+line-height: 52px;
+text-align: center;
+padding-bottom: 40px ;
+}
+
+#pricing .price_switch{
+font-size: 16px;
+font-weight: 600;
+line-height: 26px;
+text-align: center;
+}
+#pricing #anually{
+  color: #6366F1;
+}
+#pricing #place{
+  background-color: var(--primaryColor);
+  width: 46px;
+  height: 20px;
+  border-radius: 12px;
+  margin: 5px ;
+  
+}
+
+#pricing #switch {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+#pricing .price_card{
+  margin: 41px 15px;
+  padding: 20px 30px;
+  box-shadow:  0px 4.4px 20px -1px rgba(19, 16, 34, 0.05), 0px 4px 9px -1px rgba(19, 16, 34, 0.03);
+}
+#pricing .price_card_pic{
+  margin-right: 10px;
+}
+#pricing .price_card_range{
+  font-weight: 400;
+  font-size: 18px;
+}
+#pricing .price_card_range span{
+  font-weight: 800;
+  font-size: 28px;
+}
+#pricing .price_card p{
+  padding: 5px 10px;
+}
+#pricing .price_card button{
+  padding: 11px 44px;
+  margin: 64px 40px 40px 40px;
+  background-color: #ffffff;
+  border: 1px solid var(--primaryColor);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  transition: .1s;
+
+}
+#pricing .price_card:hover{
+  background-color: var(--primaryColor);
+  color: #ffffff;
+}
+#pricing .price_card:hover p span{
+  color: white ;
+}
+/* pricing ends */
+
+/* quotes starts */
+#quotes{
+  padding: 96px 0px;
+  background-color: var(--gray100);
+  
+}
+#quotes .quote_1,
+#quotes .quote_2{
+  margin: 15px 35px;
+ 
+}
+#quotes .quote_1{
+  background-color: var(--gray900);
+  color: white;
+  padding: 48px 50px;
+}
+#quotes .quote_1 h1{
+font-size: 80px;
+font-weight: 800;
+line-height: 104px;
+letter-spacing: 0px;
+text-align: left;
+margin: 25px 0px;
+}
+#quotes .quote_1 p{
+font-weight: 400;
+font-size: 24px;
+line-height: 38.4px;
+margin-bottom: 50px;
+}
+#quotes .quote_2{
+  background-color: #ffffff;
+  padding:40px;
+  position: relative;
+  
+}
+#quotes .quote_2 .quote{
+  margin-bottom: 30px ;
+}
+#quotes .quote_2 p{
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+#quotes .quote_2 .quote_person img{
+  width: 80px;
+  margin-right: 10px;
+}
+#quotes .quote_2 .quote_person h6{
+font-size: 16px;
+font-weight: 700;
+line-height: 26px;
+text-align: left;
+margin-top: 20px;
+}
+#quotes .quote_2 .quote_person p{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: var(--gray600);
+}
+#quotes .arrows .leftarrow,
+#quotes .arrows .rightarrow{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    color: #0B0F19;
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99999;
+    cursor: pointer;
+    
+}
+#quotes .arrows .rightarrow{
+  top: 12%;
+  right: 12%;    
+}
+#quotes .arrows .leftarrow{
+  top: 12%;
+  left: 72%;
+}  
+#quotes .slick-dots{
+  text-align: center;
+  list-style: none;
+}
+#quotes .slick-dots li{
+  display: inline-block;
+}
+
+#quotes .slick-dots li button{
+  width: 5px;
+  height: 5px;
+  color: transparent;
+  margin:  20px 10px 0px 10px;
+  border-radius: 50%;
+  background-color:  var(--gray500);
+  border: none;
+  transition: 0.3s;
+}
+
+#quotes .slick-dots li.slick-active button{
+  width: 24px;
+  height: 5px;
+  border-radius: 4.5px;
+  background-color: var(--primaryColor);
+}
+
+/* quote ends*/
+/* Integrate starts */
+#integrate{
+  padding: 112px 0px;
+}
+#integrate h1{
+font-size: 40px;
+font-weight: 800;
+line-height: 52px;
+color: var(--gray900);
+text-align: center;
+
+}
+#integrate p{
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+color: var(--gray600);
+text-align: center;
+margin: 24px 20px 48px 20px;
+}
+#integrate img{
+ max-width: 150px; 
+ margin-left: 10px; 
+ margin-bottom: 48px;
+
+}
+
+#integrate button{
+  color: #ffffff;
+  background-color: var(--primaryColor);
+  width: 196px;
+  height: 50px;
+  font-weight: 600;
+ line-height: 22px;
+ text-align: center;
+ border-radius: 6px;
+ padding: 11px 11px;
+ border: var(--primaryColor);
+ 
+ 
+}
+/* integrate ends */
+
+/* subscribe starts */
+
+#subscribe{
+  padding: 96px;
+  background-color: var(--gray900);
+}
+#subscribe h2{
+color: #ffffff;
+font-size: 40px;
+font-weight: 800;
+line-height: 52px;
+text-align: center;
+}
+#subscribe p{
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0px;
+text-align: center;
+color: var(--gray200);
+margin: 16px 0px;
+}
+#subscribe form input{
+  padding: 13px 40px;
+  border-radius: 5px 0px 0px 5px;
+}
+#subscribe form button{
+  background-color: var(--primaryColor);
+  color: #ffffff;
+  padding: 13px 13px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+font-size: 16px;
+font-weight: 600;
+line-height: 26px;
+text-align: center;
+}
+/* subscribe  ends */
+/* footer starts */
+footer{
+  padding: 72px 0px;
+  color: var(--gray900);
+}
+footer .newsletter{
+  margin: 0px 40px;
+  
+}
+footer .newsletter p{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+}
+footer .newsletter h4{
+font-size: 16px;
+font-weight: 800;
+line-height: 22px;
+text-align: left;
+margin-bottom: 8px;
+}
+footer form input {
+  width: 250px;
+  padding: 11px 20px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #D4D7E5 ;
+}
+footer form button{
+  background-color: var(--primaryColor);
+  color: #fff;
+  padding: 11px 28px;
+  font-weight: 600;
+  font-size: 14px ;
+  border-radius: 0px 5px 5px 0px;
+  border: none; 
+}
+footer .option,
+footer .social,
+footer .email{
+  margin: 0px 25px;
+}
+footer .options ul a,
+footer .social ul a{
+color: var(--gray900);
+font-size: 16px;
+font-weight: 600;
+line-height: 26px;
+text-align: left;
+margin-bottom: 5px;
+}
+footer .email h6{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+footer .copyright{
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 80px;
+  color: var(--gray600);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
